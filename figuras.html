@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras geométricas | Curso Práctico de JavaScript</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1 class="title">
+            Figuras geométricas
+        </h1>
+        <div>
+            <figure><img src="./pictures/176244.png" alt="logotipo" class="logo" ></figure>
+            <p class="subtitle">Curso práctico de JavaScript </p>
+        </div>
+
+    </header>
+    <section class="container">
+        <div class="calculator">
+            <div class="module calc-square">
+                <h2>Calcula el área y perímetro de un cuadrado</h2>
+                <form>
+                    <div>
+                        <label for="inputCuadrado">
+                            Medida del lado del cuadrado
+                        </label>
+                        <input type="number" id="inputCuadrado" class="input-text"/>
+                    </div>
+                    <div class="buttons">
+                        <button type="button" onclick="calcularPerimetroCuadrado()">Calcular el perímetro</button>
+                        <button type="button" onclick="calcularAreaCuadrado()">Calcular el área</button>
+                    </div>
+                </form>
+            </div>
+            <figure class="ilustration square"></figure>
+        </div>
+        <div class="calculator">
+            <div class="module calc-triangle">
+                <h2>Calcula el área y perímetro de un triángulo</h2>
+                <form>
+                    <div>
+                        <label for="inputTri_base">
+                            Base del triángulo
+                        </label>
+                        <input type="number" id="inputTri_base" class="input-text"/>
+                    </div>
+                    <div>
+                        <label for="inputTri_lado1">
+                            Lado 1 del triángulo
+                        </label>
+                        <input type="number" id="inputTri_lado1" class="input-text"/>
+                    </div>
+                    <div>
+                        <label for="inputTri_lado2">
+                            Lado 2 del triángulo
+                        </label>
+                        <input type="number" id="inputTri_lado2" class="input-text"/>
+                    </div>
+                    <div>
+                        <label for="inputTri_altura">
+                            Altura del triángulo
+                        </label>
+                        <input type="number" id="inputTri_altura" class="input-text"/>
+                    </div>
+                    <div class="buttons">
+                        <button type="button" onclick="calcularPerimetroTriangulo()">Calcular el perímetro</button>
+                        <button type="button" onclick="calcularAreaTriangulo()">Calcular el área</button>
+                    </div>
+                </form>
+            </div>
+            <figure class="ilustration triangle-up"></figure>
+        </div>
+        
+        <div class="calculator">
+            <div class="module calc-circle">
+                <h2>Calcula el área y perímetro de un círculo</h2>
+                <form>
+                    <div>
+                        <label for="inputCirculo" >
+                            Escribe cuánto mide el radio del círculo
+                        </label>
+                        <input type="number" id="inputCirculo" class="input-text"/>
+                    </div>
+                    <div class="buttons">
+                        <button type="button" onclick="calcularPerimetroCirculo()">Calcular el perímetro</button>
+                    <button type="button" onclick="calcularAreaCirculo()">Calcular el área</button>
+                    </div>
+                </form>
+            </div>
+            <figure class="ilustration circle"></figure>
+        </div>
+        
+        
+    </section>
+    
+    <script src="./figuras02.js"></script> <!-- vinculación a archivo de código de JS -->
+    <script>
+        var juandc = 10;   //inserción de código de JS directamente en HTML
+    </script>
+
+</body>
+</html>

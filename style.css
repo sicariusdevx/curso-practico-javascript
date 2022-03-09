@@ -1,0 +1,87 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+    background-color:powderblue;
+}
+.logo {
+    width: 40px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(87, 87, 87);
+}
+header h1 {
+    margin-bottom: 8px;
+}
+header div{
+    display: flex;
+    align-items: center;
+}
+header div figure {
+    width: 10%;
+}
+.calculator {
+    display: flex;
+}
+.ilustration {
+    display: none;
+}
+.module {
+    margin-bottom: 16px;
+    margin-left: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    border: darkslategrey solid;
+    border-radius: 8px;
+    background-color: beige;
+}
+.module h2 {
+    color: darkgrey;
+}
+.input-text {
+    margin: 8px 0 8px 0;
+}
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+label {
+    display: inline-block;
+}
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+}
+.triangle-up {
+    width: 0;
+    height: 0;
+    border-right: 75px solid transparent;
+    border-left: 50px solid transparent;
+    border-bottom: 150px solid brown;
+}
+.circle {
+    height: 100px;
+    width: 100px;
+    background-color: brown;
+    border-radius: 50%;
+}
+@media (min-width:600px){
+    .ilustration {
+        display: block;
+    }
+    .module {
+        width: 60%;
+    }
+    label {
+        width: 300px;
+    }
+}
